@@ -1,6 +1,13 @@
 import random
 
-words = ["cat", "dog", "mouse", "bird", "snake", "lion", "tiger", "bear", "elephant", "monkey", "giraffe", "zebra", "cow", "pig", "sheep", "chicken", "duck", "goose", "horse", "penguin", "fish", "shark", "whale", "dolphin", "crocodile", "cobra", "frog", "turtle", "snail", "spider", "ant", "bee", "beetle", "butterfly", "caterpillar", "dragonfly", "ladybug", "mosquito", "panda", "penguin", "pig", "rabbit", "rhinoceros", "snail", "snake", "spider", "squirrel", "tiger", "turtle", "vulture", "wasp", "zebra"]
+#list of random animals
+words = ["cat", "dog", "mouse", "bird", "snake", "lion", "tiger", "bear", "elephant", "monkey", 
+        "giraffe", "zebra", "cow", "pig", "sheep", "chicken", "duck", "goose", "horse", "penguin", 
+        "fish", "shark", "whale", "dolphin", "crocodile", "cobra", "frog", "turtle", "snail", "spider", 
+        "ant", "bee", "beetle", "butterfly", "caterpillar", "dragonfly", "ladybug", "mosquito", "panda", 
+        "penguin", "pig", "rabbit", "rhinoceros", "snail", "snake", "spider", "squirrel", "tiger", "turtle", 
+        "vulture", "wasp", "zebra"]
+
 target_word = random.choice(words)
 len = target_word.__len__()
 guessed_letters = []
@@ -20,9 +27,8 @@ def main():
         print(" ".join(remaining))
         print("Mistakes: " + str(mistakes))
         print("Mistakes: " + str(guessed_letters))
-        #print("blanks? " + str(check_blanks(remaining)))
 
-        guessed = get_input()
+        guessed = input("Guess a letter: ")
         lengthOfGuessed = guessed.__len__()
 
         #check if input is greater than 1
@@ -55,12 +61,8 @@ def main():
         
         Sorry, you lose!
         Your word was: ''' + target_word + '''
+        
         ''')
-
-#function to get user input
-def get_input():
-    guess = input("Guess a letter: ")
-    return guess
 
 #function to check if there is any blanks left
 def check_blanks(remaining):
