@@ -61,7 +61,7 @@ def main():
                 #AI code
                 if ai_active:
                     updateList(guessed_letters, remaining)
-                    updateAI()
+                    removeMistakeWords()
                 print("___________________________________" )
     
     

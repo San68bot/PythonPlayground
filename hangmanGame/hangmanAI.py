@@ -32,7 +32,7 @@ def updateList(mistakeList, remainingList):
             ai_onlyLetters_remainingList.append(ai_remainingList[i])
             ai_onlyLetters_indexList.append(i)
 
-def updateAI():
+def removeMistakeWords():
     #remove any words from ai_entireWordList with characters that are in ai_mistakeList
     for x in ai_entireWordList:
         for y in ai_mistakeList:
