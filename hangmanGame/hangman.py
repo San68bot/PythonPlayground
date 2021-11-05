@@ -1,5 +1,6 @@
 import random
 from hangmanAI import *
+from hangmanAI2 import *
 
 #list of random animals
 words = ["cat", "dog", "mouse", "bird", "snake", "lion", "tiger", "bear", "elephant", "monkey", 
@@ -36,7 +37,6 @@ def main():
         lengthOfGuessed = userGuess.__len__()
 
         if userGuess == "/s":
-            init(words, guessed_letters, remaining)
             ai_active = True
             userGuess = input("Guess a letter: ")
             lengthOfGuessed = userGuess.__len__()
@@ -60,8 +60,7 @@ def main():
 
                 #AI code
                 if ai_active:
-                    updateList(guessed_letters, remaining)
-                    removeMistakeWords()
+                    updateAI(words, guessed_letters, remaining)
                 print("___________________________________" )
     
     
