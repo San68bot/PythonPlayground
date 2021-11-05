@@ -25,7 +25,7 @@ def main():
         remaining.append("_")
 
     #add characters to guressed
-    while (mistakes <= 50 and check_blanks(remaining)):
+    while (mistakes <= 5 and check_blanks(remaining)):
         #print each character in remaining
         print(" ")
         print(" ".join(remaining))

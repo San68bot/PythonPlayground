@@ -88,4 +88,4 @@ def calculateConfidence():
     global confidence
 
     confidence = round(100 / len(newList), 2)
-    print("confidence: " + str(confidence) + "%")
+    print("Confidence: " + str(confidence) + "%")
