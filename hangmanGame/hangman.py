@@ -10,8 +10,7 @@ words = ["cat", "dog", "mouse", "bird", "snake", "lion", "tiger", "bear", "eleph
         "penguin", "pig", "rabbit", "rhinoceros", "snail", "snake", "spider", "squirrel", "tiger", "turtle", 
         "vulture", "wasp", "zebra"]
 
-target_word = "turtle"
-#random.choice(words)
+target_word = random.choice(words)
 len = target_word.__len__()
 guessed_letters = []
 ai_active = False
