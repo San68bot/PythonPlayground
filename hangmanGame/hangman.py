@@ -1,6 +1,5 @@
 import random
 from hangmanAI import *
-from hangmanAI2 import *
 
 #list of random animals
 words = ["cat", "dog", "mouse", "bird", "snake", "lion", "tiger", "bear", "elephant", "monkey", 
