@@ -1,0 +1,1 @@
+mistakes <= 5 and check_blanks(remaining)
