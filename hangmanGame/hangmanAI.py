@@ -10,6 +10,11 @@ newList = []
 
 count = 0
 confidence = 0
+tnob = 0
+
+def setTNOB(totalNumOfBlanks):
+    global tnob
+    tnob = totalNumOfBlanks
 
 def updateAI(entireWordList, mistakeList, remainingList):
     global ai_entireWordList
@@ -78,6 +83,10 @@ def removeCharacterIndexes():
                     count += 1
         if count == len(ai_onlyLetters_remainingList):
             newList.append(word)
+
+    for x in newList:
+        if x.__len__() != tnob:
+            newList.remove(x)
     print("newList: " + str(newList))
 
 def calculateConfidence():

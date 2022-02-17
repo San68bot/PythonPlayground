@@ -23,6 +23,13 @@ def main():
     for i in target_word:
         remaining.append("_")
 
+    count = 0
+    for i in remaining:
+        if i == "_":
+            count += 1
+
+    setTNOB(count)
+
     #add characters to guressed
     while (mistakes <= 5 and check_blanks(remaining)):
         #print each character in remaining
